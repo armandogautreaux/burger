@@ -1,0 +1,39 @@
+<div class="container my-5">
+  <div class="row">
+
+    <div class="col-sm-6 mx-auto">
+      <h4 class="text-danger">Your order:</h4>
+      <ul>
+        {{#each burger}}
+        {{#unless devoured}}
+        {{> burgers/burgers-block complete=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-smm-6 mx-auto">
+      <h4 class="text-danger">Burgers already devoured:</h4>
+      <ul>
+        {{#each burger}}
+        {{#if devoured}}
+        {{> burgers/burgers-block complete=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+
+    <div class="col-sm-12 text-center">
+      <h3 class="py-2">Add a Burger!</h3>
+      <form class="create-form">
+        <div class="form-group">
+          <input type="text" class="btn-lg text-center" id="name" name="name" placeholder="Insert Burger Name">
+          <input type="hidden" id="devoured" value="false">
+        </div>
+        <button class="btn btn-danger p-3" type="submit">Add a burger</button>
+      </form>
+    </div>
+
+  </div>
+</div>

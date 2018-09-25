@@ -1,0 +1,51 @@
+/*
+	Author: Armando Gautreaux
+	Template: Burger Game
+	Version: 0.1
+	GITHUB: https://github.com/armandogautreaux
+*/
+
+/*
+========================================
+1. General Styles
+========================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
+
+html {
+  background-color: #f7dc6f;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Arvo', serif;
+  font-size: 1.5rem;
+}
+
+/*
+========================================
+2. Game Content
+========================================
+*/
+.play-area {
+  background-color: #f7dc6f;
+}
+.container {
+  background-color: #f7dc6f;
+}
+
+.logo {
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 4px 4px black;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.arvo {
+  font-family: 'Arvo', serif;
+  font-size: 1.5rem;
+}
